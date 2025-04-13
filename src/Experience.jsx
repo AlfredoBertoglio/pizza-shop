@@ -20,7 +20,7 @@ export default function Experience ()
         blur={0.45}
     />
 
-    {/* <CameraGsap can be added here /> */}
+    {/* <CameraGsap /> */}
 
     <directionalLight 
         castShadow
