@@ -6,7 +6,6 @@ export default function AutoBipBip()
 {       
         const bipbip = new Howl({
             src: [CarHorn],
-            // autoplay: true,
             loop: false,
             volume: 0.5
         });   
