@@ -51,7 +51,7 @@ export default function CameraGsap()
         }
     })
 
-// Need to review camera movement jumping position after returning from screen.
+// Need to review camera movement jumping 'origin' position after returning from screen.
 
 //     tl.to(controls.target, {
 //       x: 0.5, y: -3, z: -10,
