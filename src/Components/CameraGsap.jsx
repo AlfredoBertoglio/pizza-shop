@@ -10,6 +10,10 @@ export default function CameraGsap()
     const { camera } = useThree()
     const tl = gsap.timeline()
     const Magic = useRef();
+
+    // Will test removing 'intro' or set to not action/only once at start.
+
+    // Pending to confirm if this helps with camera movement back to origin.
   
     const intro = async () => {
           controls.current.dolly(-10);
