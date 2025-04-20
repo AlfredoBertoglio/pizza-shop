@@ -4,7 +4,6 @@ import { useFrame } from '@react-three/fiber';
 import Speaker from "./Speaker";
 import AutoBipBip from "./CarHorn";
 import BigScreen from "./BigScreen";
-import CameraGsap from "./CameraGsap";
 
 
 
@@ -117,19 +116,6 @@ export default function PizzaShop(name, ...props) {
         rotation={[0, 0, 1.57]}
         scale={0.786}
       />
-
-{/* <CameraControls ref={controls}
-        minDistance={10}
-        maxDistance={14}
-        minPolarAngle={0.5}
-        maxPolarAngle={2.1}
-        draggingSmoothTime={0.5}
-        truckSpeed={0}
-        enableTransition={false}
-        enabled={true}
-    /> */}
-
-    <CameraGsap/>
 
       <mesh
         castShadow
