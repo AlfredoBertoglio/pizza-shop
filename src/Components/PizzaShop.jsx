@@ -70,8 +70,6 @@ export default function PizzaShop(name, ...props) {
         scale={[0.26, 0.261, 0.231]}
       />
 
-      {/* <CameraGsap/> */}
-
       <mesh
         castShadow
         receiveShadow
