@@ -21,7 +21,6 @@ root.render(
             far: 220,
             position: [ -9.5 , -3.5 , 5.5 ]
         } }
-        
     >
     <EffectComposer> 
     <Bloom
@@ -30,7 +29,6 @@ root.render(
         luminanceThreshold={ 2.5 }
     />
     </EffectComposer>
-    
     <Experience />
     </Canvas>
     </Suspense>

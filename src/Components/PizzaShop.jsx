@@ -343,6 +343,7 @@ export default function PizzaShop(name, ...props) {
         rotation={[-1.578, 0.01, 0.264]}
         scale={[-0.238, -0.126, -0.343]}
       />
+
       <Html
             transform
             distanceFactor={ 3.3 }
@@ -355,34 +356,7 @@ export default function PizzaShop(name, ...props) {
             <a href='https://www.linkedin.com/in/alfredo-bertoglio/' target='blank'>
             <img src="./small-display-social.gif" width='52px' height='92px'/></a>
             </div>
-        </Html>
-        
-        {/* <Html
-            className="Magic"
-           transform
-           distanceFactor={ 3.3 }
-           position={[0.999, 8.583, 0.180]}
-           rotation-y={ - 9.16 }
-           occlude="blending"
-           scale={[1, 1, 1]}
-          >
-          <div id="ButtonTest">
-              <button onClick={OnClickBackCamera} >Back</button>
-          </div>
-      </Html> 
-
-        <Html
-            transform
-            distanceFactor={ 3.3 }
-            position={[-0.073, 7.730, -0.015]}
-            rotation-y={ - 9.43 }
-            occlude="blending"
-            scale={[1, 1, 1]}
-        >
-            <div onClick={OnClickGood}>
-            <img id="BigScreenGif" src="./alfredo-pizza.gif" width='300px' height='150px' alt=""/>
-            </div>
-        </Html> */}
+      </Html>
 
       <mesh
         castShadow
@@ -982,13 +956,7 @@ export default function PizzaShop(name, ...props) {
         position={[1.462, 7.747, 3.476]}
         rotation={[-Math.PI, 0.754, -Math.PI]}
         scale={[0.175, 0.174, 0.192]}
-      >
-
-        {/* <Suspense fallback>
-        <VideoMaterial />
-        </Suspense> */}
-         
-        
+      > 
       </mesh>
       <mesh
         castShadow
@@ -1958,11 +1926,7 @@ export default function PizzaShop(name, ...props) {
         // position={[-0.073, 7.758, 0.291]}
         rotation={[-1.564, 0, 0]}
         scale={[1.287, 0.702, 0.693]}
-        
       />
-      {/* <group>
-      <Bounds fit clip observe margin={1.2}>
-      <SelectToZoom> */}
       <Html
             transform
             distanceFactor={ 3.3 }
