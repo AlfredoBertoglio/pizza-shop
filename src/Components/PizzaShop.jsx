@@ -1,5 +1,5 @@
-import React, { useEffect ,Suspense, useState, useRef } from "react";
-import { Bounds, useBounds ,Sparkles, Html, Float, useGLTF } from "@react-three/drei";
+import React, { useRef } from "react";
+import { Sparkles, Html, Float, useGLTF } from "@react-three/drei";
 import { useFrame } from '@react-three/fiber';
 import Speaker from "./Speaker";
 import AutoBipBip from "./CarHorn";
