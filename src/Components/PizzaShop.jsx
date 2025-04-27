@@ -2416,7 +2416,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Circle023.geometry}
-        // material={materials.lamp} toneMapped={ false }
         position={[-2.897, 8.673, 3.148]}
         scale={0.175}
         >
@@ -3072,7 +3071,6 @@ export default function PizzaShop(name, ...props) {
         scale={[1, 1.171, 2.918]}
       />
       <mesh
-        // castShadow
         receiveShadow
         geometry={nodes.Plane361.geometry}
         material={materials.PisoMetal}
