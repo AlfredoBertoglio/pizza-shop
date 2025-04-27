@@ -1938,9 +1938,6 @@ export default function PizzaShop(name, ...props) {
           <BigScreen ref={grandeDisplay} />
             
       </Html>
-      {/* </SelectToZoom>
-      </Bounds>
-      </group> */}
       <mesh
         castShadow
         receiveShadow
