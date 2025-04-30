@@ -3079,5 +3079,3 @@ export default function PizzaShop(name, ...props) {
   );
 }
 
-// useGLTF.preload("/PizzaMaterials.glb");
-
