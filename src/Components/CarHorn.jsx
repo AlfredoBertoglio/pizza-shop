@@ -1,5 +1,4 @@
 import { Howl } from 'howler';
-
 import CarHorn from '../../public/Sounds/car-horn.mp3';
 
 export default function AutoBipBip()

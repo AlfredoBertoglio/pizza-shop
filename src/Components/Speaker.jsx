@@ -1,5 +1,4 @@
 import { Howl } from 'howler';
-
 import PizzaVoiceMale from '../../public/Sounds/PizzaVoiceMale.mp3';
 
 export default function Speaker()
