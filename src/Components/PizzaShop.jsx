@@ -2498,7 +2498,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Sphere.geometry}
-        // material={materials["Car Lights"]}
         position={[-3.447, 7.177, 2.244]}
         rotation={[0, 0, 0.489]}
         scale={[0.044, 0.083, 0.084]}
@@ -2509,7 +2508,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Sphere001.geometry}
-        // material={materials["Car Lights"]}
         position={[-3.448, 7.177, 1.217]}
         rotation={[0, 0, 0.489]}
         scale={[0.044, 0.083, 0.084]}
