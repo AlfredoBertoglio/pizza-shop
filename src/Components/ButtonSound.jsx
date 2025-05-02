@@ -1,5 +1,4 @@
 import { Howl } from 'howler';
-
 import InterfaceSound from '../../public/Sounds/interface-click.wav';
 
 export default function ButtonClick()
