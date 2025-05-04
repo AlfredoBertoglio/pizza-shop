@@ -671,7 +671,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Circle112.geometry}
-        // material={materials["Green Neon"]}
         position={[-1.423, 9.742, 1.562]}
         rotation={[0, 0, 3.13]}
         scale={[0.119, 0.167, 0.119]}
@@ -1390,7 +1389,7 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Plane288.geometry}
-        // material={materials["Green Neon"]}
+        // old Green Neon
         position={[0.729, 9.183, 3.557]}
         rotation={[1.574, -0.064, 0]}
         scale={0.266}
@@ -2118,7 +2117,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert048.geometry}
-        // material={materials["Green Neon"]}
         position={[-2.219, 10.606, 1.855]}
         rotation={[1.298, -1.57, 2.964]}
         scale={[0.066, 0.116, 0.075]}
@@ -2507,7 +2505,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Gesture_Neon.geometry}
-        // material={materials["Green Neon"]}
         position={[0.665, 9.267, 3.573]}
         rotation={[0.016, -0.009, -0.067]}
         scale={0.223}
