@@ -15,11 +15,11 @@ export default function CameraGsap()
 
     // Pending to confirm if this helps with camera movement back to origin.
   
-    const intro = async () => {
-          controls.current.dolly(-10);
-          controls.current.smoothTime = 1.8;
-          controls.current.dolly(10, true);
-      };  
+    // const intro = async () => {
+    //       controls.current.dolly(-10);
+    //       controls.current.smoothTime = 1.8;
+    //       controls.current.dolly(10, true);
+    //   };  
   
     const OnClickGood = useCallback(() => {
       controls.enableRotate = false
@@ -50,8 +50,6 @@ export default function CameraGsap()
         onComplete: () => {
           controls.current.enabled = true
           controls.enableDamping = true
-          
-        
         }
     })
 
@@ -73,9 +71,9 @@ export default function CameraGsap()
     // })
   }, [])
   
-  useEffect(() => {
-    intro();
-  }, [])
+  // useEffect(() => {
+  //   intro();
+  // }, [])
 
     // useEffect(() => {
     //     intro();
@@ -105,7 +103,7 @@ export default function CameraGsap()
         ref={Magic}
            transform
            distanceFactor={ 3.3 }
-           position={[0.899, 8.583, -0.05]}
+           position={[0.899, -1.583, -1.80]}
            rotation-y={ - 9.46 }
            occlude="blending"
            scale={[1, 1, 1]}
@@ -118,7 +116,7 @@ export default function CameraGsap()
         <Html
             transform
             distanceFactor={ 3.3 }
-            position={[-0.073, 7.730, -0.015]}
+            position={[-0.073, -1.900, -1.815]}
             rotation-y={ - 9.43 }
             occlude="blending"
             scale={[1, 1, 1]}

@@ -2,7 +2,7 @@ import { SoftShadows , Center , Environment } from '@react-three/drei';
 import PizzaShop from './Components/PizzaShop';
 import Sounds from './Components/Sounds';
 import React from "react";
-// import CameraGsap from './Components/CameraGsap';
+import CameraGsap from './Components/CameraGsap';
 
 
 export default function Experience ()
@@ -20,7 +20,7 @@ export default function Experience ()
         blur={0.45}
     />
 
-    {/* <CameraGsap /> */}
+    <CameraGsap />
 
     <directionalLight 
         castShadow
