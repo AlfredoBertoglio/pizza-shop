@@ -15,15 +15,13 @@ export default function CameraGsap()
 
     // Pending to confirm if this helps with camera movement back to origin.
   
-    // const intro = async () => {
-    //       controls.current.dolly(-10);
-    //       controls.current.smoothTime = 1.8;
-    //       controls.current.dolly(10, true);
-    //   };  
+    const intro = async () => {
+          controls.current.dolly(-10);
+          controls.current.smoothTime = 1.8;
+          controls.current.dolly(10, true);
+      };  
   
     const OnClickGood = useCallback(() => {
-      controls.enableRotate = false
-      controls.enableZoom = false
       controls.current.enabled = false
       document.getElementById("BigScreenGif").style.display = "none"
       
@@ -33,47 +31,48 @@ export default function CameraGsap()
           duration: 3.5,
           ease: 'power3.inOut',
           immediateRender: false,
-      })
+          onUpdate: () => {
+			
+            controls.current.enabled = false
+          
+          },
+          
+        //  onComplete: () => {
+        
+        //     controls.current.enabled = true
+          
+        //   },
+      }
+    )
 
   }, [])
   
+  // Need to review camera movement jumping 'origin' position after returning from screen.
+  
     const OnClickBackCamera = useCallback(() => {
-      controls.enableRotate = false
-      controls.enableZoom = false
+      // controls.enableRotate = false
+      // controls.enableZoom = false
+      // controls.current.enabled = true
       document.getElementById("BigScreenGif").style.display = "Block"
   
       tl.to(camera.position, {
-        x: 0.5, y: -2, z: -14,
+        x: 0.5, y: -2.1, z: -14,
         duration: 2.5,
         ease: 'power3.inOut',
         immediateRender: false,
         onComplete: () => {
           controls.current.enabled = true
-          controls.enableDamping = true
-        }
-    })
+          // controls.position.update()
+          // camera.lookAt(CameraControls.target)
+        },
+        
+    });
 
-// Need to review camera movement jumping 'origin' position after returning from screen.
-
-//     tl.to(controls.target, {
-//       x: 0.5, y: -3, z: -10,
-//       duration: 1.5,
-//       ease: 'power3.inOut',
-//       immediateRender: false,
-//   })
-    
-    // gsap.set (controls.target, {disabled:true});
-    
-    // tl.to(controls.target, {
-    //     x: -0.5, y: -3.1, z:-6.7,
-    //     duration: 2,
-    //     ease: 'power3.inOut',
-    // })
   }, [])
   
-  // useEffect(() => {
-  //   intro();
-  // }, [])
+  useEffect(() => {
+    intro();
+  }, [])
 
     // useEffect(() => {
     //     intro();
@@ -87,14 +86,15 @@ export default function CameraGsap()
         <>
         
         <CameraControls ref={controls}
+        // position={[0.5,-2.1, 14]}
         minDistance={10}
         maxDistance={14}
         minPolarAngle={0.5}
         maxPolarAngle={2.1}
         draggingSmoothTime={0.5}
         truckSpeed={0}
-        enableTransition={true}
-        enableDamping={true}
+        // enableTransition={true}
+        // enableDamping={true}
         enabled={true}
         
     />
