@@ -1996,7 +1996,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert036.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.22, 10.53, 1.715]}
         rotation={[0.875, -1.563, 0.875]}
         scale={0.085}
@@ -2007,7 +2006,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert037.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.22, 10.53, 1.715]}
         rotation={[0.875, -1.563, 0.875]}
         scale={0.085}
@@ -2018,7 +2016,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert038.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.22, 10.53, 1.715]}
         rotation={[0.875, -1.563, 0.875]}
         scale={0.085}
@@ -2029,7 +2026,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert039.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.22, 10.53, 1.715]}
         rotation={[0.875, -1.563, 0.875]}
         scale={0.085}
@@ -2040,7 +2036,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert040.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.22, 10.53, 1.715]}
         rotation={[0.875, -1.563, 0.875]}
         scale={0.085}
@@ -2051,7 +2046,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert041.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.22, 10.53, 1.715]}
         rotation={[0.875, -1.563, 0.875]}
         scale={0.085}
@@ -2062,7 +2056,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert042.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.22, 10.53, 1.715]}
         rotation={[0.875, -1.563, 0.875]}
         scale={0.085}
@@ -2073,7 +2066,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert043.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.22, 10.53, 1.715]}
         rotation={[0.875, -1.563, 0.875]}
         scale={0.085}
@@ -2084,7 +2076,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert044.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.22, 10.53, 1.715]}
         rotation={[0.875, -1.563, 0.875]}
         scale={0.085}
@@ -2095,7 +2086,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert045.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.22, 10.53, 1.715]}
         rotation={[0.875, -1.563, 0.875]}
         scale={0.085}
@@ -2139,7 +2129,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert049.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.219, 10.606, 1.855]}
         rotation={[1.298, -1.57, 2.964]}
         scale={[0.066, 0.116, 0.075]}
