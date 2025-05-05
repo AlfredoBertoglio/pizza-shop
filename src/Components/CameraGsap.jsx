@@ -36,7 +36,7 @@ export default function CameraGsap()
           },
           
         //  onComplete: () => {
-        
+          
         //     controls.current.enabled = true
           
         //   },
