@@ -2444,7 +2444,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Circle104.geometry}
-        // material={materials.lamp}
         position={[-0.608, 8.606, 2.835]}
         scale={0.175}
       >

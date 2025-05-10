@@ -11,16 +11,20 @@ export default function CameraGsap()
     const tl = gsap.timeline()
     const Magic = useRef();
 
+    const BigScreenTest = useRef();
+
     // Need to review camera movement back to origin.
   
-    const intro = async () => {
-          controls.current.dolly(-10);
-          controls.current.smoothTime = 1.8;
-          controls.current.dolly(10, true);
-      };  
+    // const intro = async () => {
+    //       controls.current.dolly(-10);
+    //       controls.current.smoothTime = 1.8;
+    //       controls.current.dolly(10, true);
+    //   };  
   
     const OnClickGood = useCallback(() => {
-      controls.current.enabled = false
+      // controls.current.enabled = false
+      controls.enableRotate = false
+      controls.enableZoom = false
       document.getElementById("BigScreenGif").style.display = "none"
       
   
@@ -28,18 +32,15 @@ export default function CameraGsap()
           x: -0.1, y: -2.1, z:-4.7,
           duration: 3.5,
           ease: 'power3.inOut',
+          rotation: 90,
           immediateRender: false,
           onUpdate: () => {
-			
-            controls.current.enabled = false
+            
+          controls.current.enabled = false
+          controls.enableRotate = false
+          controls.enableZoom = false
           
           },
-          
-        //  onComplete: () => {
-          
-        //     controls.current.enabled = true
-          
-        //   },
       }
     )
 
@@ -55,22 +56,37 @@ export default function CameraGsap()
   
       tl.to(camera.position, {
         x: 0.5, y: -2.1, z: -14,
-        duration: 2.5,
+        duration: 3.5,
         ease: 'power3.inOut',
-        immediateRender: false,
+        // immediateRender: false,
+        // transformOrigin: 'center center',
+        // rotation: 90,
+        // onUpdate: () => {
+        //   camera.lookAt(controls.position)
+        // },
         onComplete: () => {
           controls.current.enabled = true
+          controls.current.enableRotate = true
+          controls.current.enableZoom = true
+  //          tl.to(controls.target, {
+  //         x: 0.5, y: -2.1, z: -14,
+  //         duration: 2.5,
+  //         ease: 'power3.inOut',
+  //         },
+  // )
+
           // controls.position.update()
           // camera.lookAt(CameraControls.target)
         },
         
-    });
+    },
+    );
 
   }, [])
   
-  useEffect(() => {
-    intro();
-  }, [])
+  // useEffect(() => {
+  //   intro();
+  // }, [])
 
     // useEffect(() => {
     //     intro();
@@ -91,8 +107,9 @@ export default function CameraGsap()
         maxPolarAngle={2.1}
         draggingSmoothTime={0.5}
         truckSpeed={0}
+        enableRotate={true}
         // enableTransition={true}
-        // enableDamping={true}
+        enableDamping={true}
         enabled={true}
         
     />
@@ -112,6 +129,7 @@ export default function CameraGsap()
       </Html> 
 
         <Html
+            ref={BigScreenTest}
             transform
             distanceFactor={ 3.3 }
             position={[-0.073, -1.900, -1.815]}
