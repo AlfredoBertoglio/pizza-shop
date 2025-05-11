@@ -1617,7 +1617,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert004.geometry}
-        // material={materials["Pizza Light"]}
         position={[0.851, 12.025, 1.925]}
         rotation={[-0.003, -0.192, -0.695]}
         scale={0.725}
@@ -1711,7 +1710,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Text.geometry}
-        // material={materials["Pizza Light"]}
         position={[-2.587, 8.991, 0.922]}
         rotation={[1.572, 0.022, 1.571]}
         scale={0.429}
