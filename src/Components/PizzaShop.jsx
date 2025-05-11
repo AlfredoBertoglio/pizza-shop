@@ -1411,7 +1411,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Plane310.geometry}
-        // material={materials["Cheese Light"]}
         position={[-0.689, 9.191, 3.557]}
         rotation={[1.574, 0.123, -0.001]}
         scale={0.266}
@@ -1608,7 +1607,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Cafe_Neon.geometry}
-        // material={materials["Cheese Light"]}
         position={[-0.715, 9.251, 3.569]}
         rotation={[0, 0, 0.128]}
         scale={0.142}
@@ -1652,7 +1650,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert009.geometry}
-        // material={materials["Cheese Light"]}
         position={[0.851, 12.025, 1.925]}
         rotation={[-0.003, -0.192, -0.695]}
         scale={0.725}
@@ -1663,7 +1660,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert010.geometry}
-        // material={materials["Cheese Light"]}
         position={[0.851, 12.025, 1.925]}
         rotation={[-0.003, -0.192, -0.695]}
         scale={0.725}
@@ -1674,7 +1670,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert011.geometry}
-        // material={materials["Cheese Light"]}
         position={[0.851, 12.025, 1.925]}
         rotation={[-0.003, -0.192, -0.695]}
         scale={0.725}
@@ -1745,7 +1740,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert013.geometry}
-        // material={materials["Cheese Light"]}
         position={[-2.231, 10.702, 1.505]}
         rotation={[3.007, -1.57, -3.012]}
         scale={0.081}
