@@ -1400,7 +1400,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Plane290.geometry}
-        // material={materials["Light Blue Neon"]}
         position={[0.023, 9.195, 3.557]}
         rotation={[1.574, 0.008, 0]}
         scale={0.266}
