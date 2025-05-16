@@ -108,7 +108,6 @@ export default function CameraGsap()
         draggingSmoothTime={0.5}
         truckSpeed={0}
         enableRotate={true}
-        // enableTransition={true}
         enableDamping={true}
         enabled={true}
         
