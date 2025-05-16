@@ -1389,7 +1389,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Plane288.geometry}
-        // old Green Neon
         position={[0.729, 9.183, 3.557]}
         rotation={[1.574, -0.064, 0]}
         scale={0.266}

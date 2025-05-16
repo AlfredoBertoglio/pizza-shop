@@ -1,8 +1,8 @@
-import { CameraControls, Html } from '@react-three/drei';
-import { useRef, useEffect} from 'react';
+import { OrbitControls, Html } from '@react-three/drei';
+import { useRef, useCallback} from 'react';
 import { useThree } from '@react-three/fiber';
 import gsap from 'gsap';
-import { useCallback } from 'react';
+// import { useEffect } from 'react';
 
 export default function CameraGsap()
 {       
@@ -99,7 +99,7 @@ export default function CameraGsap()
 
         <>
         
-        <CameraControls ref={controls}
+        <OrbitControls ref={controls}
         // position={[0.5,-2.1, 14]}
         minDistance={10}
         maxDistance={14}
