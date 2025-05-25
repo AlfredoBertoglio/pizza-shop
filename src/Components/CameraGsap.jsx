@@ -13,7 +13,7 @@ export default function CameraGsap()
 
     const BigScreenTest = useRef();
 
-    // Need to review camera movement back to origin.
+    // Need to review camera movement back to origin, disabling OrbitControls.
   
     // const intro = async () => {
     //       controls.current.dolly(-10);
@@ -46,7 +46,7 @@ export default function CameraGsap()
 
   }, [])
   
-  // Need to review camera movement jumping 'origin' position, when setting controls.current.enabled = true 'OnComplete'.
+  // Need to review camera movement jumping 'origin' position, when setting controls.current.enabled = true 'OnComplete' or not disabling controls but rotate/drag, etc.
 
     const OnClickBackCamera = useCallback(() => {
       // controls.enableRotate = false
