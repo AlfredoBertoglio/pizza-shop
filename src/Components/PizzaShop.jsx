@@ -1686,7 +1686,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert033.geometry}
-        // material={materials["Red Neon"]}
         position={[-2.219, 10.606, 1.855]}
         rotation={[1.298, -1.57, 2.964]}
         scale={[0.066, 0.116, 0.075]}
