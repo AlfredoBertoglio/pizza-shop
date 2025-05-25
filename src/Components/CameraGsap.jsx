@@ -70,9 +70,6 @@ export default function CameraGsap()
   //         ease: 'power3.inOut',
   //         },
   // )
-
-          // controls.position.update()
-          // camera.lookAt(CameraControls.target)
         },
         
     },
