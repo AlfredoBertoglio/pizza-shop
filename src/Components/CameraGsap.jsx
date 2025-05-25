@@ -59,11 +59,7 @@ export default function CameraGsap()
         duration: 3.5,
         ease: 'power3.inOut',
         // immediateRender: false,
-        // transformOrigin: 'center center',
         // rotation: 90,
-        // onUpdate: () => {
-        //   camera.lookAt(controls.position)
-        // },
         onComplete: () => {
           controls.current.enabled = true
           controls.current.enableRotate = true
