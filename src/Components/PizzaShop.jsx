@@ -337,9 +337,6 @@ export default function PizzaShop(name, ...props) {
       <mesh
         castShadow
         receiveShadow
-        // geometry={nodes.Small_Display.geometry}
-        // material={materials["window glass"]}
-        // position={[1.934, 7.823, 0.437]}
         rotation={[-1.578, 0.01, 0.264]}
         scale={[-0.238, -0.126, -0.343]}
       />
