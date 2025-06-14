@@ -1592,7 +1592,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Futbol_Neon.geometry}
-        // material={materials["Light Blue Neon"]}
         position={[0.016, 9.204, 3.567]}
         scale={0.125}
       >
