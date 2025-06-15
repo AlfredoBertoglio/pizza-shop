@@ -83,8 +83,6 @@ export default function CameraGsap()
     //     intro();
     //     // OnClickGood();
     // }, []);
-
-    // useEffect(OnClickGood);
     
     return(
 
