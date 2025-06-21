@@ -87,7 +87,6 @@ export default function CameraGsap()
     return(
 
         <>
-        
         <OrbitControls ref={controls}
         // position={[0.5,-2.1, 14]}
         minDistance={10}
@@ -99,7 +98,6 @@ export default function CameraGsap()
         enableRotate={true}
         enableDamping={true}
         enabled={true}
-        
     />
 
         <Html
