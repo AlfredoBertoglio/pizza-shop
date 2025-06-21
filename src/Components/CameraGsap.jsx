@@ -10,7 +10,6 @@ export default function CameraGsap()
     const { camera } = useThree()
     const tl = gsap.timeline()
     const Magic = useRef();
-
     const BigScreenTest = useRef();
 
     // Need to review camera movement back to origin, disabling OrbitControls or change drag/rotate attributes.
@@ -39,7 +38,6 @@ export default function CameraGsap()
           controls.current.enabled = false
           controls.enableRotate = false
           controls.enableZoom = false
-          
           },
       }
     )
