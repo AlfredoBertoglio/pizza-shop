@@ -11,8 +11,6 @@ export default function CameraGsap()
     const tl = gsap.timeline()
     const Magic = useRef();
     const BigScreenTest = useRef();
-
-    // Need to review camera movement back to origin, disabling OrbitControls or change drag/rotate attributes.
   
     // const intro = async () => {
     //       controls.current.dolly(-10);
@@ -86,7 +84,7 @@ export default function CameraGsap()
 
         <>
         <OrbitControls ref={controls}
-        // position={[0.5,-2.1, 14]}
+        // position={[0.5,-2.1, 14]} - might remove position
         minDistance={10}
         maxDistance={14}
         minPolarAngle={0.5}
