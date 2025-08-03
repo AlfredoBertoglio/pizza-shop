@@ -6,7 +6,6 @@ export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate an API call
     setTimeout(() => {
       setIsLoading(false);
     }, 200000);
