@@ -2,7 +2,7 @@ import { OrbitControls, Html } from '@react-three/drei';
 import { useRef, useCallback} from 'react';
 import { useThree } from '@react-three/fiber';
 import gsap from 'gsap';
-// import { useEffect } from 'react';
+import { useEffect } from 'react';
 
 export default function CameraGsap()
 {       
@@ -12,37 +12,36 @@ export default function CameraGsap()
     const Magic = useRef();
     const BigScreenTest = useRef();
   
-    // const intro = async () => {
-    //       controls.current.dolly(-10);
-    //       controls.current.smoothTime = 1.8;
-    //       controls.current.dolly(10, true);
-    //   };  
+    const intro = async () => {
+          controls.current.dolly(-10);
+          controls.current.smoothTime = 1.8;
+          controls.current.dolly(10, true);
+      };  
   
     const OnClickGood = useCallback(() => {
       // controls.current.enabled = false
-      controls.enableRotate = false
-      controls.enableZoom = false
+      controls.current.enableRotate = false
+      controls.current.enableZoom = false
       document.getElementById("BigScreenGif").style.display = "none"
       
   
       tl.to(camera.position, {
-          x: -0.1, y: -2.1, z:-4.7,
+          x: -0.1, y: -1, z:-5,
           duration: 3.5,
           ease: 'power3.inOut',
-          rotation: 90,
+          // rotation: 90,
           immediateRender: false,
-          onUpdate: () => {
-            
-          controls.current.enabled = false
-          controls.enableRotate = false
-          controls.enableZoom = false
-          },
+          // onUpdate: () => {
+          // controls.current.enabled = false
+          // controls.enableRotate = false
+          // controls.enableZoom = false
+          // },
       }
     )
 
   }, [])
   
-  // Need to review camera movement jumping 'origin' position, when setting controls.current.enabled = true 'OnComplete' or not disabling controls but rotate/drag, then enable them OnComplete, etc.
+  // Camera it's not jumping since using OrbitControls and 'enableRotate/Pan/Zoom = false' OnClick, need to fix intro dolly & drag, performance, etc.
 
     const OnClickBackCamera = useCallback(() => {
       // controls.enableRotate = false
@@ -51,11 +50,11 @@ export default function CameraGsap()
       document.getElementById("BigScreenGif").style.display = "Block"
   
       tl.to(camera.position, {
-        x: 0.5, y: -2.1, z: -14,
+        x: 0.5, y: -1, z: -14,
         duration: 3.5,
         ease: 'power3.inOut',
         onComplete: () => {
-          controls.current.enabled = true
+          // controls.current.enabled = true
           controls.current.enableRotate = true
           controls.current.enableZoom = true
   //          tl.to(controls.target, {
@@ -71,25 +70,27 @@ export default function CameraGsap()
 
   }, [])
   
-  // useEffect(() => {
-  //   intro();
-  // }, [])
+  useEffect(() => {
+    intro();
+  }, [])
 
     // useEffect(() => {
     //     intro();
-    //     // OnClickGood();
+    //     OnClickGood();
     // }, []);
     
     return(
 
         <>
         <OrbitControls ref={controls}
-        // position={[0.5,-2.1, 14]} - might remove position
-        minDistance={10}
+        // position={[0.5,-2.1, 14]}
+        minDistance={8}
         maxDistance={14}
         minPolarAngle={0.5}
         maxPolarAngle={2.1}
-        draggingSmoothTime={0.5}
+        dampingFactor={0.05}
+        zoomSpeed={0.3}
+        enablePan={false}
         truckSpeed={0}
         enableRotate={true}
         enableDamping={true}
