@@ -32,9 +32,7 @@ export default function CameraGsap()
           // rotation: 90,
           immediateRender: false,
           // onUpdate: () => {
-          // controls.current.enabled = false
-          // controls.enableRotate = false
-          // controls.enableZoom = false
+          // None here
           // },
       }
     )
