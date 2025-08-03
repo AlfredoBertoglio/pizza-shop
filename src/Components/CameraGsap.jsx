@@ -55,12 +55,6 @@ export default function CameraGsap()
           // controls.current.enabled = true
           controls.current.enableRotate = true
           controls.current.enableZoom = true
-  //          tl.to(controls.target, {
-  //         x: 0.5, y: -2.1, z: -14,
-  //         duration: 2.5,
-  //         ease: 'power3.inOut',
-  //         },
-  // )
         },
         
     },
@@ -71,11 +65,6 @@ export default function CameraGsap()
   useEffect(() => {
     intro();
   }, [])
-
-    // useEffect(() => {
-    //     intro();
-    //     OnClickGood();
-    // }, []);
     
     return(
 
