@@ -39,7 +39,7 @@ export default function CameraGsap()
 
   }, [])
   
-  // Camera it's not jumping since using OrbitControls and 'enableRotate/Pan/Zoom = false' OnClick, need to fix intro dolly & drag, performance, etc.
+  // pending review camera movement OnClick & performance.
 
     const OnClickBackCamera = useCallback(() => {
       document.getElementById("BigScreenGif").style.display = "Block"
@@ -112,7 +112,7 @@ export default function CameraGsap()
         <div>
             <button>Click me</button>
         </div>
-    </Html>  */}
+      </Html>  */}
       </>
     )
     
