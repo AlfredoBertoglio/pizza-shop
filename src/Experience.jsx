@@ -27,7 +27,6 @@ export default function Experience ()
     />
     
     <ambientLight intensity={ 0.3} />
-
     <Center>
     <PizzaShop/>
     </Center>

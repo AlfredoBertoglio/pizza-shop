@@ -12,5 +12,4 @@ export default function Speaker()
     return(
        grito.play()
     )
-
 }

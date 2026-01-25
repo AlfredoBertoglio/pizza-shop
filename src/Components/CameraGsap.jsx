@@ -82,7 +82,7 @@ export default function CameraGsap()
     />
 
         <Html
-        ref={Magic}
+          ref={Magic}
            transform
            distanceFactor={ 3.3 }
            position={[0.899, -1.583, -1.80]}
@@ -93,7 +93,7 @@ export default function CameraGsap()
           >
               <button id="ButtonTest" onClick={OnClickBackCamera} >Back</button>
           
-      </Html> 
+         </Html> 
 
         <Html
             ref={BigScreenTest}
