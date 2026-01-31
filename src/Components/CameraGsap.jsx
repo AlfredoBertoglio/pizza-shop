@@ -29,11 +29,7 @@ export default function CameraGsap()
           x: -0.1, y: -1, z:-5,
           duration: 3.5,
           ease: 'power3.inOut',
-          // rotation: 90,
           immediateRender: false,
-          // onUpdate: () => {
-          // None here
-          // },
       }
     )
 
