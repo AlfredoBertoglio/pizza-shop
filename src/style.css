@@ -22,7 +22,6 @@ img {
     -o-user-drag: none;
 }
 
-
 button.forward{
 position: absolute;
 top: 84%;
@@ -70,7 +69,6 @@ button.back{
     touch-action: manipulation;
   }
 
-  
   .forward:hover, .back:hover {
     background-color: #bc3523;
   }
