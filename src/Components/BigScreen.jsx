@@ -1,7 +1,4 @@
 import InterfaceSound from './ButtonSound';
-// import Experience from '../Experience';
-
-// import MyImage from '../../public/alfredo-pizza.gif';
 import MyImage0 from '../../public/introduce-me.png';
 import MyImage1 from '../../public/skills.png';
 import MyImage2 from '../../public/experience.png';
