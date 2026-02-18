@@ -12,5 +12,4 @@ export default function ButtonClick()
     return(
        button.play()
     )
-
 }

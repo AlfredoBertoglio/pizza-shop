@@ -54,7 +54,6 @@ export default class BigScreen extends React.Component {
         if (this.state.index === 1){
             document.getElementById("BtnBack").style.visibility = "hidden";
         }
-        
     }
 
     
