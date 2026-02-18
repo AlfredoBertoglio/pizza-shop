@@ -1,7 +1,6 @@
 import { SoftShadows , Center , Environment } from '@react-three/drei';
 import PizzaShop from './Components/PizzaShop';
 import Sounds from './Components/Sounds';
-// import React from "react";
 import CameraGsap from './Components/CameraGsap';
 
 
@@ -25,7 +24,6 @@ export default function Experience ()
         intensity={ 1.2 }
         shadow-mapSize={ [ 1024 , 1024 ] }
     />
-    
     <ambientLight intensity={ 0.3} />
     <Center>
     <PizzaShop/>
