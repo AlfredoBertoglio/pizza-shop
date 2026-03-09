@@ -103,11 +103,6 @@ export default function CameraGsap()
             <img id="BigScreenGif" src="./alfredo-pizza.gif" width='300px' height='150px' alt=""/>
             </div>
         </Html>
-    {/* <Html>
-        <div>
-            <button>Click me</button>
-        </div>
-      </Html>  */}
       </>
     )
     
