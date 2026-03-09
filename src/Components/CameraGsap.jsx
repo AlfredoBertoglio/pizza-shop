@@ -63,7 +63,6 @@ export default function CameraGsap()
 
         <>
         <OrbitControls ref={controls}
-        // position={[0.5,-2.1, 14]}
         minDistance={8}
         maxDistance={14}
         minPolarAngle={0.5}

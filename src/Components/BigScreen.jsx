@@ -56,8 +56,7 @@ export default class BigScreen extends React.Component {
         }
     }
 
-    
-render(){
+    render(){
     return(
         <div>
         <img src={this.state.imgList[this.state.index]} width='300px' height='150px' alt="" /><br />
