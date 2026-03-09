@@ -14,7 +14,6 @@ export default function LoadingScreen() {
   if (isLoading) {
     return <div id='loader'><img src={logo} alt="loading..."/></div>
   }
-
   return (
     <Experience/>
   );
