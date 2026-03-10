@@ -1671,7 +1671,6 @@ export default function PizzaShop(name, ...props) {
         castShadow
         receiveShadow
         geometry={nodes.Vert027.geometry}
-        // material={materials["Sign Light"]}
         position={[-2.231, 10.702, 1.505]}
         rotation={[3.007, -1.57, -3.012]}
         scale={0.081}

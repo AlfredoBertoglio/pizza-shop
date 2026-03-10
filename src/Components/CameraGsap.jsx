@@ -74,8 +74,7 @@ export default function CameraGsap()
         enableRotate={true}
         enableDamping={true}
         enabled={true}
-    />
-
+        />
         <Html
           ref={Magic}
            transform
@@ -87,7 +86,6 @@ export default function CameraGsap()
            visible={true}
           >
               <button id="ButtonTest" onClick={OnClickBackCamera} >Back</button>
-          
          </Html> 
 
         <Html
