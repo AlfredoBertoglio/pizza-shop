@@ -13,5 +13,4 @@ export default function Sounds()
     return(
        cooking.play()
     )
-
 }
