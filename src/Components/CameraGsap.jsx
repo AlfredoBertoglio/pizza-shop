@@ -19,7 +19,6 @@ export default function CameraGsap()
       };  
   
     const OnClickGood = useCallback(() => {
-      // controls.current.enabled = false
       controls.current.enableRotate = false
       controls.current.enableZoom = false
       document.getElementById("BigScreenGif").style.display = "none"
