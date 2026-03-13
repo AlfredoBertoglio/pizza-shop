@@ -18,7 +18,6 @@ export default class BigScreen extends React.Component {
         const img2 = MyImage2
         const img3 = MyImage3
         const img4 = MyImage4
-        
 
         this.state = {
             index: 0,
